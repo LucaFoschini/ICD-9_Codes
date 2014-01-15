@@ -1,3 +1,9 @@
+# The MIT License (MIT)
+# 
+# Copyright (c) 2014 Luca Foschini
+#
+# (A copy of the license can be found here: http://opensource.org/licenses/MIT)
+# 
 # Convert a txt export of Disease codes into CSV
 # Input: stdin, Ouput: stdout
 #
