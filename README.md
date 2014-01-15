@@ -28,6 +28,6 @@ textutil -convert txt Dtab12.rtf
 Run the conversion script:
 
 ```bash
-python deseases_to_csv.py < Dtab12.txt  > Dtab12.csv
+python diseases_to_csv.py < Dtab12.txt  > Dtab12.csv
 ```
 
