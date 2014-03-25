@@ -71,7 +71,7 @@ for line in sys.stdin.readlines():
             # avoid redundant descriptions
             if approx_similarity(third_level_desc, fourth_level_desc) > 0.9:
                 desc = fourth_level_desc
-            print '"%s","%s"' % (code, desc)
+            print '"%s","%s"' % (code, desc.replace('"', ''))
         
     elif subrange_match:
         # stop memorizing subranges
@@ -88,7 +88,7 @@ for line in sys.stdin.readlines():
             if approx_similarity(fourth_level_desc, fifth_level_desc) > 0.9:
                 desc = "%s; %s" % (third_level_desc, fifth_level_desc)
 
-            print '"%s%d","%s"' % (code, subcode, desc)
+            print '"%s%d","%s"' % (code, subcode, desc.replace('"', ''))
 
     elif subrange_def_match:
         # start memorizing subranges
